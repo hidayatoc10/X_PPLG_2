@@ -1,6 +1,6 @@
 <?php
 
-$conn = mysqli_connect("Localhost", "root", "", "data_pegawai");
+$conn = mysqli_connect("Localhost", "root", "", "pplg2");
 
 ?>
 
