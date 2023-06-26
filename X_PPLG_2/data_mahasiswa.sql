@@ -28,7 +28,7 @@ SET time_zone = "+00:00";
 -- Struktur dari tabel `tb_pegawai`
 --
 
-CREATE TABLE `tb_pegawai` (
+CREATE TABLE `tb_mahasiswa` (
   `nip` varchar(50) NOT NULL,
   `nama` varchar(50) NOT NULL,
   `alamat` text NOT NULL,
@@ -41,12 +41,6 @@ CREATE TABLE `tb_pegawai` (
 --
 -- Dumping data untuk tabel `tb_pegawai`
 --
-
-INSERT INTO `tb_pegawai` (`nip`, `nama`, `alamat`, `no_hp`, `status`, `jabatan`, `foto`) VALUES
-('123', 'Agus', 'demak', '087789987654', 'Pegawai', 'Operator', 'Tulips.jpg'),
-('1298', 'Sunandar', 'Jakarta', '089987789011', 'Honorer', 'Produksi', 'Penguins.jpg'),
-('67', 'joni', 'semarang', '089987789098', 'Honorer', 'ketua', 'Jellyfish.jpg');
-
 -- --------------------------------------------------------
 
 --
@@ -81,10 +75,6 @@ CREATE TABLE `tb_profil` (
 --
 -- Dumping data untuk tabel `tb_profil`
 --
-
-INSERT INTO `tb_profil` (`id_profil`, `nama_profil`, `alamat`, `bidang`) VALUES
-(1, 'PT MAJU JAYA INDUSTRIES', 'JAKARTA', 'MANUFACTUR');
-
 --
 -- Indexes for dumped tables
 --
@@ -92,7 +82,7 @@ INSERT INTO `tb_profil` (`id_profil`, `nama_profil`, `alamat`, `bidang`) VALUES
 --
 -- Indeks untuk tabel `tb_pegawai`
 --
-ALTER TABLE `tb_pegawai`
+ALTER TABLE `tb_mahasiswa`
   ADD PRIMARY KEY (`nip`);
 
 --
